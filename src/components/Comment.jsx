@@ -7,7 +7,9 @@ export const Comment = ({ userImagePath, username, commentText, likeNum, replies
   return (
     <div className="d-flex gap-2 my-2">
          {comments.map(()=>(
-            [username]
+            userImagePath={userImagePath},
+            username={username}
+            
           ))}
 
         </div>

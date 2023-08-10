@@ -2,11 +2,6 @@ import { comments } from "@/libs/comments";
 
 export const Reply = ({ userImagePath, username, replyText, likeNum }) => {
 
-  userImagePath=[comments.replies.userImagePath]
-  // {comments.map((com)=>(
-  //   username=[com.replies.username],
-  //   userImagePath={com,replies,userImagePath}
-  // ))}
   return (
 
     <div className="d-flex gap-2 my-2 ps-5">
