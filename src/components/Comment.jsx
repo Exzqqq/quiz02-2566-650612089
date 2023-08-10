@@ -1,14 +1,16 @@
-export const Comment = ({
-  userImagePath,
-  username,
-  commentText,
-  likeNum,
-  replies,
-}) => {
+import { comments } from "@/libs/comments"
+import { Reply } from "./Reply"
+
+export const Comment = ({ userImagePath, username, commentText, likeNum, replies}) => {
+
+
   return (
-    <div>
-      your code here...
-      {/* map-loop render Reply component here */}
-    </div>
-  );
-};
+    <div className="d-flex gap-2 my-2">
+         {comments.map(()=>(
+            [username]
+          ))}
+
+        </div>
+
+)
+}
